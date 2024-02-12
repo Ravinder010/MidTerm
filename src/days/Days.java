@@ -22,7 +22,22 @@ public class Days {
     /**
      * @param args the command line arguments
      */
+    
+    enum Day{
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY,
+        SUNDAY
+    }
+    
     public static void main(String[] args) {
+        System.out.println("Printing all the days of the week: ");
+    for (Day day : Day.values()){
+        System.out.println(day);
+    }
          
     Scanner in =new Scanner(System.in);
     System.out.println("Enter the day number (one,two,three,four,five) in string");
